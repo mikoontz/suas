@@ -1,0 +1,165 @@
+---
+output: pdf_document
+---
+
+# Equipment
+
+## Aircraft
+
++ Matrice 100
+  + Go Professional Hard Case
+  + Propellers (x4)
+  + Remote controller
+  + USB to Lightning cord
+  + DJI hex charger (including AC cord and RC cord)
+  + Signal boosting antenna attachments
+  + Extra propellers (x4)
+  
++ Mavic Pro
+  + Lowepro Fastpack
+  + Extra propellers (x6)
+  + Hub charger
+
+## Sensors
+
++ Zenmuse X3
++ Micasense RedEdge3
+  + Downwelling light sensor
+  + GPS
+  + Calibrated reflectance panels
+
+## Communication
+
++ iPad
++ Chromebook
+  + Chargine cord
++ Macbook Pro
+  + Charging cord
++ Garmin GPSr
++ iPhone
++ Walkie Talkies
+
+## Data storage
+
++ 500GB SSD (x2)
++ 64GB SD card (x2)
++ 32GB SD card (x4)
+
+## Batteries
+
++ TB48D Battery (x12)
++ TB47D Battery (x1)
++ Mavic Pro Batteries (x5)
+
+## Generator
+
++ Cooler or Action Packer
++ Goal Zero Yeti 1400
++ Goal Zero Boulder 100 Briefcase solar panel (x4)
++ Goal Zero wire bundle
+  + 15' Anderson Power Pole extension cord
+  + Anderson Power Pole to 4x 8mm plugs
+  + 15' 8mm to 8mm extension cord (x3)
+  + 30' 8mm to 8mm extension cord (x1)
++ EasyAcc 20000mAh power brick
++ Anker 21W solar panel
+
+# Action Items
+
+## Pre-field
+
+1. Check weather
+    a. [1800wxBrief](https://www.1800wxbrief.com/Website/dashboard;jsessionid=A3A124E9FCAA184148C6204226EAD485)
+    a. [NOAA](https://www.weather.gov/)
+1. File flight plan with [UCOP EHS](https://ehs.ucop.edu/drones/)
+1. Create missions in Map Pilot
+1. Save missions for offline use (including terrain tiles)
+
+## Pre-flight
+
+1. Check propellers for damage
+1. Install propellers and tighten
+1. Check aircraft frame for damage
+1. Check connections of all cables
+1. Check security of zip ties holding camera to aircraft
+1. Dust off camera lenses
+1. Insert SD card to RGB camera
+1. Insert SD card to multispectral camera
+1. Put signal boosters onto remote controller antenna
+1. Attach lanyard to antenna
+1. Attach iPad to remote controller and plug it in
+1. Turn on iPad
+1. Close all apps except Mail and Map Pilot
+1. Turn on remote controller
+1. Open saved mission for current location
+1. Insert charged battery into aircraft
+1. Turn on battery in aircraft
+1. Wait for aircraft to be detected
+1. Click "upload" to upload the mission to the aircraft
+1. Click "Yes" to enable terrain following feature
+1. Verify that terrain following path looks reasonable (doesn't climb too high or drop too low)
+1. Click green "Accept" terrain awareness
+1. Click "no" for "Do not adjust return to home altitude in the case of an abandonment event"
+    a. This takes up a lot of time to fly to 40m above the highest terrain in the mission, and would almost never prevent an accident given that I have total control over the aircraft's altitude as it returns to home.
+1. Use laptop to connect to rededge wireless network
+    a. Network name: rededge[serial number]
+    a. Network password: micasense
+1. Open http://192.168.10.254/ in a web browser on the machine connected to the rededge wifi network
+1. Verify there is available space on home page
+1. Verify GPS has a fix on >3 satellites
+1. Verify GPS time and date are correct
+1. Take calibrated reflectance panel image with sun behind you (follow instructions on the panel)1. Configure autocapture mode (timer, every 2 seconds, "start")
+1. Verify green status LED is blinking and that SD card space available is declining (indicating pictures are being captured)
+1. Clear the launch area
+1. Click "start" in Map Pilot to begin mission
+
+## During flight
+
+1. Look up as aircraft takes off to verify green RedEdge status LED is still blinking
+1. Also make sure aircraft takes off into a canopy opening
+1. Turn off Terrain Awareness view in Map Pilot
+1. Bring up the camera
+    a. Each time the camera view blinks, an image is captured
+1. Verify aircraft is rising and falling with the terrain
+1. Verify the image count is increasing
+1. Keep remote controller pointed towards the aircraft to ensure maximum signal transmission
+    a. Use the directional indicators in Map Pilot to guide you
+    a. Remote controller signal should never drop below ~90% if signal boosters are attached
+    a. Remote controller signal will usually be closer to 97-100%
+1. Ensure your aircraft remains in visual line of sight for you or your visual observers
+1. Maintain clear lines of radio communication with your visual observers
+
+
+## Post-flight
+
+1. Turn off battery
+1. Remove battery from aircraft
+1. Put battery in the shade
+1. If mission is not yet complete:
+    a. Insert new charged battery
+    a. Turn battery on
+    a. Click "Battery changed" in Map Pilot
+    a. Wait for red triangle to appear in Map Pilot and for camera feed to come up, indicating successful connection with the aircraft
+    a. Follow rest of steps as detailed in "Pre-flight"
+1. Shut down remote controller
+1. Shut down iPad
+1. Plug iPad into power brick
+1. Cool batteries
+1. Charge batteries
+1. Put SD card contents onto SSD
+1. Delete data from SD cards
+
+## Post-field
+
+1. Upload data from SSD to NAS
+1. Sync data from NAS to cloud
+1. Process new RGB photosets
+1. Process new multispectral photosets
+    a. Calibrated reflectance panel information
+        i. _1 (red) 0.64
+        i. _2 (green) 0.64
+        i. _3 (blue) 0.64
+        i. _4 (NIR) 0.60
+        i. _5 (rededge) 0.63
+1. Upload flight logs to AirData
+1. Update flight checklist
